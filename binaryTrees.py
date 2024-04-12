@@ -14,6 +14,7 @@ def insert(root, key):
             root.left = insert(root.left, key)
     return root
 
+
 def search(root, key):
     if root is None or root.val == key:
         return root
@@ -31,10 +32,10 @@ r = insert(r, 60)
 r = insert(r, 80)
 
 
-print("Searching for 40 in the tree:")
+print("Searching for 40 in the tree")
 found = search(r, 40)
 if found:
-    print("Found!")
+    print("Found")
 else:
     print("Not found.")
 
